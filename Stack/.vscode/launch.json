@@ -1,0 +1,294 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "type": "java",
+        "name": "CopyStackInAnother",
+        "request": "launch",
+        "mainClass": "basicStack.CopyStackInAnother",
+        "projectName": "Stack_a70800ea"
+    },
+    {
+        "type": "java",
+        "name": "leftGreater",
+        "request": "launch",
+        "mainClass": "TrapingRainWater.leftGreater",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "LeetCode_151",
+        "request": "launch",
+        "mainClass": "Note_05.LeetCode_151",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "AnotherWay",
+        "request": "launch",
+        "mainClass": "Note_05.AnotherWay",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "PreviouseGreaterEle_02",
+        "request": "launch",
+        "mainClass": "Note_05.PreviouseGreaterEle_02",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "GreatestElement_01",
+        "request": "launch",
+        "mainClass": "Note_05.GreatestElement_01",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "LeetCode_20",
+        "request": "launch",
+        "mainClass": "Note_04.LeetCode_20",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "BalancedSizeValid_02",
+        "request": "launch",
+        "mainClass": "Note_04.BalancedSizeValid_02",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "BalancedBrackets_01",
+        "request": "launch",
+        "mainClass": "Note_04.BalancedBrackets_01",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "StackByLinkedList_02",
+        "request": "launch",
+        "mainClass": "Note_03.StackByLinkedList_02",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "StackByArray_01",
+        "request": "launch",
+        "mainClass": "Note_03.StackByArray_01",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "ReverseStackByRecursion_03",
+        "request": "launch",
+        "mainClass": "Note_02.ReverseStackByRecursion_03",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "RemoveAtByRecursion_02",
+        "request": "launch",
+        "mainClass": "Note_02.RemoveAtByRecursion_02",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "Current File",
+        "request": "launch",
+        "mainClass": "${file}"
+    },
+    {
+        "type": "java",
+        "name": "UnderFlowOfStack",
+        "request": "launch",
+        "mainClass": "FlowStcak_04.UnderFlowOfStack",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "GreatestElement",
+        "request": "launch",
+        "mainClass": "GreatestElement",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "AllOperation",
+        "request": "launch",
+        "mainClass": "LinkedListImplemtaion.AllOperation",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "CopyStack_02",
+        "request": "launch",
+        "mainClass": "Note_01.CopyStack_02",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "DisplayStack_03",
+        "request": "launch",
+        "mainClass": "Note_01.DisplayStack_03",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "PushAtBottomAnyIdx_04",
+        "request": "launch",
+        "mainClass": "Note_01.PushAtBottomAnyIdx_04",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "PushAtByRecursion_05",
+        "request": "launch",
+        "mainClass": "Note_01.PushAtByRecursion_05",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "Stack_Basic_STL_01",
+        "request": "launch",
+        "mainClass": "Note_01.Stack_Basic_STL_01",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "RemoveAt_01",
+        "request": "launch",
+        "mainClass": "Note_02.RemoveAt_01",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "ArrayImplement_04",
+        "request": "launch",
+        "mainClass": "StackAll_000.ArrayImplement_04",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "CopyStack_02(1)",
+        "request": "launch",
+        "mainClass": "StackAll_000.CopyStack_02",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "PushAtIdxOr_03",
+        "request": "launch",
+        "mainClass": "StackAll_000.PushAtIdxOr_03",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "ReverLinkedList_01",
+        "request": "launch",
+        "mainClass": "StackAll_000.ReverLinkedList_01",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "StackBasic",
+        "request": "launch",
+        "mainClass": "StackAll_000.StackBasic",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "AllTill_30_07_24",
+        "request": "launch",
+        "mainClass": "Stack_00.AllTill_30_07_24",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "PushEleAtAnyIdx",
+        "request": "launch",
+        "mainClass": "Stack_02.PushEleAtAnyIdx",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "ReverseRecursive",
+        "request": "launch",
+        "mainClass": "Stack_03.ReverseRecursive",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "ImplementStackWithArray",
+        "request": "launch",
+        "mainClass": "Stack_05.ImplementStackWithArray",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "ImplementationOfLinkedList",
+        "request": "launch",
+        "mainClass": "Stack_05.ImplementationOfLinkedList",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "LinkedListPra_01",
+        "request": "launch",
+        "mainClass": "Stack_05.LinkedListPra_01",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "LinkedListThrough",
+        "request": "launch",
+        "mainClass": "Stack_05.LinkedListThrough",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "StackInJava",
+        "request": "launch",
+        "mainClass": "Stack_06.StackInJava",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "NextGreaterElement",
+        "request": "launch",
+        "mainClass": "Stack_07_Leet.NextGreaterElement",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "CopyStackInAnother",
+        "request": "launch",
+        "mainClass": "basicStack.CopyStackInAnother",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "CreateStack",
+        "request": "launch",
+        "mainClass": "basicStack.CreateStack",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "DisplayStack",
+        "request": "launch",
+        "mainClass": "basicStack.DisplayStack",
+        "projectName": "Stack_a33dc526"
+    },
+    {
+        "type": "java",
+        "name": "ReverseStack",
+        "request": "launch",
+        "mainClass": "basicStack.ReverseStack",
+        "projectName": "Stack_a33dc526"
+    }
+]
+}
