@@ -1,0 +1,244 @@
+#1
+
+## Question :
+
+    reverse words in a string.
+
+## 1️⃣ What you did **correctly** ✅
+
+### ✔ Conceptual understanding
+
+You understood that:
+
+- A string can be processed **character by character**
+- Words are separated by **spaces**
+- Reversing can be done using:
+
+  - **Loops**
+  - **Stack (LIFO concept)**
+
+This is very good 👏
+
+---
+
+### ✔ You practiced **two approaches**
+
+1. **Without stack** → using `split()` and loop
+2. **With stack** → character-based reversal
+
+Interviewers like this because it shows **problem-solving flexibility**.
+
+---
+
+## 2️⃣ What you are **learning here** 🎓
+
+From this program, you are learning:
+
+### 🔹 String handling in Java
+
+- `split(" ")`
+- `charAt(i)`
+- `length()`
+
+### 🔹 Stack concept
+
+- `push()`
+- `pop()`
+- **LIFO (Last In First Out)**
+
+### 🔹 Important logic skill
+
+👉 _How to detect word boundaries using space_
+
+This is a **very common interview problem**:
+
+> “Reverse each word in a string”
+
+---
+
+## 3️⃣ What are your **mistakes & why they happen** ❌
+
+(These are **very important** for interviews)
+
+---
+
+### ❌ Mistake 1: Comparing String with `!=`
+
+```java
+if (strArr[i] != " ")
+```
+
+🔴 **Wrong**
+In Java, strings are compared using `.equals()`
+
+✅ Correct:
+
+```java
+if (!strArr[i].equals(""))
+```
+
+📌 **Interview point**
+
+> `==` compares reference, not content
+
+---
+
+### ❌ Mistake 2: Initializing strings with extra spaces
+
+```java
+String ans = " ";
+String st = " ";
+```
+
+This adds **unwanted spaces** in output.
+
+✅ Should be:
+
+```java
+String ans = "";
+String st = "";
+```
+
+---
+
+### ❌ Mistake 3: Stack condition is wrong
+
+```java
+while (st.isEmpty()) {
+    ans = ans + st.pop();
+}
+```
+
+🔴 This loop will **never execute**
+
+✅ Correct:
+
+```java
+while (!st.isEmpty()) {
+    ans = ans + st.pop();
+}
+```
+
+📌 Interview trick question:
+
+> Difference between `isEmpty()` and `!isEmpty()`
+
+---
+
+### ❌ Mistake 4: Comparing `char` with `" "` (String)
+
+```java
+if (ch != " ")
+```
+
+🔴 `ch` is `char`, `" "` is `String`
+
+✅ Correct:
+
+```java
+if (ch != ' ')
+```
+
+---
+
+### ❌ Mistake 5: Extra space added every loop
+
+```java
+ans += " ";
+```
+
+This causes **extra spaces in output**
+
+---
+
+## 4️⃣ Corrected & Clean Code ✅
+
+### 🔹 Approach 1: Without Stack (Best for interviews)
+
+```java
+public class ReverseStrWord {
+
+    static void reverseString(String str) {
+        String[] words = str.split(" ");
+        String ans = "";
+
+        for (String word : words) {
+            String rev = "";
+            for (int i = word.length() - 1; i >= 0; i--) {
+                rev += word.charAt(i);
+            }
+            ans += rev + " ";
+        }
+
+        System.out.println(ans.trim());
+    }
+
+    public static void main(String[] args) {
+        String str = "My name is Rahul";
+        reverseString(str);
+    }
+}
+```
+
+### ✅ Output
+
+```
+yM eman si luhaR
+```
+
+---
+
+### 🔹 Approach 2: Using Stack (Data Structure based)
+
+```java
+import java.util.Stack;
+
+public class ReverseStrWord {
+
+    public static void main(String[] args) {
+        String str = "My name is Rahul";
+        Stack<Character> stack = new Stack<>();
+        String ans = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (ch != ' ') {
+                stack.push(ch);
+            } else {
+                while (!stack.isEmpty()) {
+                    ans += stack.pop();
+                }
+                ans += " ";
+            }
+        }
+
+        // For last word
+        while (!stack.isEmpty()) {
+            ans += stack.pop();
+        }
+
+        System.out.println(ans);
+    }
+}
+```
+
+---
+
+## 5️⃣ How to explain this in an interview 🧠
+
+> “I solved the problem of reversing each word in a string using two approaches.
+> In the first approach, I split the string by spaces and reversed each word using a loop.
+> In the second approach, I used a stack to reverse characters until a space is found, which follows the LIFO principle.
+> Both approaches have O(n) time complexity.”
+
+---
+
+## 6️⃣ What you should practice next 🚀
+
+- Reverse words **in place**
+- Reverse **sentence order**
+- Remove extra spaces
+- Use `StringBuilder` instead of `+`
+
+If you want, I can give you **5 interview-level string questions** based on this topic next 👍
