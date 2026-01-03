@@ -5,18 +5,21 @@ import java.util.Stack;
 public class ReverseStrWord {
     static void reverseString(String str) {
         String[] strArr = str.split(" ");
+        // here split break string into several word which don't include " "
         String ans = " ";
         for (int i = 0; i < strArr.length; i++) {
-            System.out.println(strArr[i] + " ");
+
             String s = strArr[i];
             String st = " ";
-            if (strArr[i] != " ")
-                for (int j = s.length() - 1; j >= 0; j--) {
-                    st = st + s.charAt(j);
-                }
-            ans = ans + st + " ";
+            // if (strArr[i] != " ")
+            for (int j = s.length() - 1; j >= 0; j--) {
+                // st = st + s.charAt(j);
+                System.out.print(s.charAt(j));
+            }
+            System.out.print(" ");
+            // ans = ans + st + " ";
         }
-        System.out.println(ans.trim());
+        // System.out.print(ans.trim());
         System.out.println();
     }
 
