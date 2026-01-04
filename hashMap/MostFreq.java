@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class findDuplicate {
+public class MostFreq {
     // give an array, find the most frequent element in it. if there are multiple
     // elements that appear a maximum number of times , print any one of them
     public static void findD(int arr[]) {
