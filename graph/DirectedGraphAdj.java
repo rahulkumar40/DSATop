@@ -13,6 +13,7 @@ public class DirectedGraphAdj {
         }
     }
 
+    
     public static void main(String[] args) {
         int n = 4;
         int graph[][] = new int[n][n];
