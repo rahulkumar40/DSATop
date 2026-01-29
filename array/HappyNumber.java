@@ -16,6 +16,5 @@ public class HappyNumber {
             n = getSqureDigit(n);
         }
         System.out.println(n==1);
-
     }
 }
