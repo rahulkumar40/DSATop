@@ -41,7 +41,7 @@ public class LargestCommonPrefix {
                 if (i >= strs[j].length() ||
                         currentChar != strs[j].charAt(i)) {
                     System.out.println(result);
-                    return; // 🔥 MOST IMPORTANT
+                    return; 
                 }
             }
             result += currentChar;
