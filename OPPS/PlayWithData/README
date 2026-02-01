@@ -1,0 +1,132 @@
+# 📌 Sort Records Using Comparator in Java
+
+## 📖 Overview
+
+This project demonstrates how to **sort a list of custom objects (`Record`)** in Java using the **Comparator interface**.
+The records are sorted based on:
+
+1. **Marks (Descending order)**
+2. **Name (Ascending order)** when marks are the same
+
+This approach is commonly used in **real-world applications** like ranking systems, student result management, and interview problems.
+
+---
+
+## 🧠 Problem Statement
+
+Given a list of student records containing:
+
+- `id`
+- `name`
+- `marks`
+
+Sort the records:
+
+- First by **marks (highest first)**
+- If marks are equal, then by **name (alphabetically)**
+
+---
+
+## 🏗️ Data Model
+
+Each record is represented using a custom `Record` class with:
+
+- Constructor for initialization
+- `toString()` method for formatted output
+
+---
+
+## ⚙️ Approach
+
+### Step-by-Step Explanation
+
+1. **Create a `Record` class**
+
+   - Holds `id`, `name`, and `marks`
+   - Overrides `toString()` for readable output
+
+2. **Store records in a `List`**
+
+   - Uses `ArrayList` for dynamic storage
+
+3. **Sort using `Comparator`**
+
+   - Compare marks in **descending order**
+   - If marks are equal, compare names in **ascending order**
+
+4. **Print the sorted records**
+
+---
+
+## 🔍 Sorting Logic Explained
+
+### Comparator Rule
+
+```text
+IF marks are different
+    Sort by marks (descending)
+ELSE
+    Sort by name (ascending)
+```
+
+### Why this works?
+
+- Ensures **higher-scoring students appear first**
+- Maintains **alphabetical order** for students with the same marks
+
+---
+
+## 🧪 Example Output
+
+```
+Id : 1 | Name : Vivek  | Marks : 85
+Id : 2 | Name : Anshu  | Marks : 84
+Id : 3 | Name : Pankaj | Marks : 82
+Id : 5 | Name : Pawan  | Marks : 82
+Id : 4 | Name : Kumar  | Marks : 75
+Id : 6 | Name : Kundan | Marks : 75
+```
+
+---
+
+## 💡 Key Concepts Used
+
+- Object-Oriented Programming (OOP)
+- `Comparator` Interface
+- Lambda Expressions
+- Collections Framework
+- Custom Sorting Logic
+
+---
+
+## 🎯 Use Cases
+
+- Student result ranking systems
+- Leaderboards
+- Employee performance sorting
+- Interview & coding test problems
+
+---
+
+## 🧠 Interview Explanation (Short & Crisp)
+
+> “I sorted the records using a Comparator.
+> First, records are ordered by marks in descending order.
+> If two students have the same marks, they are sorted by name in ascending order.”
+
+---
+
+## 🚀 Future Improvements
+
+- Add sorting by multiple fields dynamically
+- Use Java Stream API
+- Make fields private and use getters
+- Read data from file or database
+
+---
+
+## ✅ Conclusion
+
+This project showcases **clean and efficient sorting of custom objects in Java**, following industry-standard practices and interview-ready logic.
+
+---
