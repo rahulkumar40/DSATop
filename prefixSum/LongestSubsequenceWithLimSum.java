@@ -1,3 +1,6 @@
+package prefixSum;
+
+import java.util.*;
 
 public class LongestSubsequenceWithLimSum {
     static int index(int[] arr, int target) {
@@ -8,7 +11,7 @@ public class LongestSubsequenceWithLimSum {
             int mid = start + (end - start) / 2;
 
             if (arr[mid] <= target) {
-                ans = mid + 1;    
+                ans = mid + 1;
                 start = mid + 1;
             } else {
                 end = mid - 1;
@@ -31,11 +34,13 @@ public class LongestSubsequenceWithLimSum {
 
         return queries;
     }
-            // Binary search to find max index where prefixSum[index] <= target
-    
+    // Binary search to find max index where prefixSum[index] <= target
+
     public static void main(String[] args) {
-       int [] nums = {4,5,2,1};
-       int [] queries = {3,10,21};
-       answerQueries(nums,queries);
+        int[] nums = { 4, 5, 2, 1 };
+        int[] queries = { 3, 10, 21 };
+        int[] ans = answerQueries(nums, queries);
+        for (int ele : ans)
+            System.out.print(ele + " ");
     }
 }
