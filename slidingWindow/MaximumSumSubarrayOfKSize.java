@@ -6,7 +6,7 @@ public class MaximumSumSubarrayOfKSize {
         for (int i = 0; i < n - k; i++) {
             int innerSum = 0;
             for (int j = i; j < k + i; j++) {
-                innerSum += arr[i];
+                innerSum += arr[j];
             }
             System.out.println(innerSum + " " + maxSum);
             maxSum = Math.max(maxSum, innerSum);
@@ -15,8 +15,25 @@ public class MaximumSumSubarrayOfKSize {
         return maxSum;
     }
 
+    static int sumFunction(int arr[], int k){
+        int maxSum =0;
+        int n = arr.length;
+        int i=0, j=k-1, sum=0;
+        for(int a=0; a<k; a++){
+            sum+=arr[a];
+        }
+        i++;
+        j++;
+        while (j<n) {// n-k
+            sum=sum-arr[i-1]+arr[j];
+            maxSum=Math.max(maxSum,sum);
+            i++;j++;
+        }
+        return sum;
+    }
     public static void main(String[] args) {
         int arr[] = { 10, 20, 1, 3, -40, 80, 3 };
         System.out.println(windowAns(arr, 3));
+        System.out.println(sumFunction(arr, 3));
     }
 }
