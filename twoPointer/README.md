@@ -1,8 +1,8 @@
-
-What is the Two Pointers Pattern?
-The Two Pointers technique involves using two indices (pointers) to iterate over a data structure
+# Two Pointers Pattern
+## What is the Two Pointers Pattern?
+> The Two Pointers technique involves using two indices (pointers) to iterate over a data structure
 (usually an array or a string) to solve problems efficiently by avoiding nested loops.
-When to Use Two Pointers?
+* When to Use Two Pointers?
 When you need to find pairs, triplets, or subarrays meeting certain conditions.
 When the data is sorted or can be sorted.
 When you want to optimize brute force solutions that use nested loops (O(n2)) to linear or
