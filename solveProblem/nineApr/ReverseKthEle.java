@@ -35,6 +35,6 @@ public class ReverseKthEle {
             arr[i]=sc.nextInt();
         }
 
-        rotatedArr(arr,2);
+        rotatedArr(arr,4);
     }
 }
