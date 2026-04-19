@@ -74,3 +74,95 @@ arr = [7, -2, 15]
 ---
 
 Send next problem 👍
+
+Nice — now we move from storage → **processing data**, which is where real logic starts.
+
+---
+
+## 🔹 Problem: Find Sum of All Elements in an Array
+
+### 🔹 Problem Statement
+
+Given an array of `n` integers, calculate and return the **sum of all elements**.
+
+---
+
+### 🔹 Intuition
+
+This problem is about:
+
+* **Traversal + accumulation**
+* Maintaining a running total
+
+In real-world:
+
+* Total expenses calculation
+* Sum of marks
+* Aggregating API data
+
+Core idea:
+👉 Keep adding elements one by one into a variable (`sum`)
+
+---
+
+### 🔹 Example
+
+**Input:**
+
+```id="1abcde"
+arr = [2, 4, 6, 8]
+```
+
+**Output:**
+
+```id="2bcdef"
+20
+```
+
+**Explanation:**
+
+* Start with sum = 0
+* Add 2 → sum = 2
+* Add 4 → sum = 6
+* Add 6 → sum = 12
+* Add 8 → sum = 20
+
+Final answer = **20**
+
+---
+
+### 🔹 Another Example
+
+**Input:**
+
+```id="3cdefg"
+arr = [5, -2, 3]
+```
+
+**Output:**
+
+```id="4defgh"
+6
+```
+
+**Explanation:**
+5 + (-2) + 3 = **6**
+
+---
+
+### 🔹 Edge Cases
+
+* Empty array → sum = 0
+* All negative numbers → sum should still work
+* Large values → watch for integer overflow (in some languages)
+
+---
+
+### 🔹 Developer Insight
+
+This is the base for:
+
+* Prefix sum problems
+* Sliding window
+* Dynamic programming
+

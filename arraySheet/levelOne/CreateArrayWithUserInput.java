@@ -1,5 +1,12 @@
 package arraySheet.levelOne;
+/*
+## 1 Problem: Input and Print Array Elements
 
+### 🔹 Problem Statement
+
+Given an integer `n`, take `n` integers as input, store them in an array, and print all the elements.
+
+*/
 import java.util.Scanner;
 
 public class CreateArrayWithUserInput {
